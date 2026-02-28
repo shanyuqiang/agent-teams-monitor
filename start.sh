@@ -2,6 +2,9 @@
 
 echo "🚀 Starting Agent Teams Monitor..."
 
+# Get script directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # Colors
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
@@ -16,7 +19,7 @@ sleep 2
 
 # Start backend
 echo -e "${BLUE}Starting backend...${NC}"
-cd ~/gitee/agent-teams-monitor/backend
+cd "$SCRIPT_DIR/backend"
 npm run dev > /tmp/backend.log 2>&1 &
 BACKEND_PID=$!
 echo -e "${GREEN}Backend started (PID: $BACKEND_PID)${NC}"
@@ -26,7 +29,7 @@ sleep 3
 
 # Start frontend
 echo -e "${BLUE}Starting frontend...${NC}"
-cd ~/gitee/agent-teams-monitor/frontend
+cd "$SCRIPT_DIR/frontend"
 npm run dev > /tmp/frontend.log 2>&1 &
 FRONTEND_PID=$!
 echo -e "${GREEN}Frontend started (PID: $FRONTEND_PID)${NC}"

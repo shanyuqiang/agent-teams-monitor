@@ -32,15 +32,10 @@
 
 ```bash
 # 克隆项目
-cd ~/gitee/agent-teams-monitor
+cd agent-teams-monitor
 
 # 安装所有依赖
 npm install
-
-# 或者分别安装
-npm install
-cd backend && npm install
-cd ../frontend && npm install
 ```
 
 ## 使用

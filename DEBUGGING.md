@@ -4,11 +4,11 @@
 
 ```bash
 # 1. 启动后端
-cd ~/gitee/agent-teams-monitor/backend
+cd agent-teams-monitor/backend
 npm run dev
 
 # 2. 启动前端 (新终端)
-cd ~/gitee/agent-teams-monitor/frontend
+cd agent-teams-monitor/frontend
 npm run dev
 
 # 3. 在 Chrome 中打开
