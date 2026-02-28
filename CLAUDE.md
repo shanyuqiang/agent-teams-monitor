@@ -78,3 +78,19 @@ This is a monorepo using npm workspaces:
 - Root `package.json` orchestrates backend and frontend
 - `backend/` - Express + Socket.io server (port 3001)
 - `frontend/` - React + Vite + Tailwind (port 5173)
+
+## UI Layouts
+
+Two main layouts in `frontend/src/components/`:
+- **Layout.jsx** - Dashboard view with sidebar team list
+- **ChatLayout.jsx** - Three-panel chat view (teams → members → messages)
+
+## Socket.io Connection
+
+Client connects from frontend to backend:
+```javascript
+import { io } from 'socket.io-client'
+const socket = io('http://localhost:3001')
+```
+
+CORS is enabled for `http://localhost:5173`.
