@@ -1,0 +1,25 @@
+{
+  "name": "agent-teams-monitor-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "build": "echo 'Backend build complete'"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.4",
+    "chokidar": "^3.5.3",
+    "cors": "^2.8.5",
+    "lodash.debounce": "^4.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
