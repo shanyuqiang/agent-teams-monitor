@@ -2,7 +2,7 @@
 
 一个漂亮的实时监控面板，用于监控 Claude Code Agent Teams 的日志文件和活动。
 
-![Dashboard Preview](./docs/preview.png)
+![Dashboard Preview](./docs/home.png)
 
 ## 功能特性
 
